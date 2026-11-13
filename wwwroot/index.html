@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10151b"><title>RabbitMQ Lab · Aprenda construindo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#inicio"><span class="brand-mark">R</span><span>rabbit<span class="accent">lab</span><small>APRENDA CONSTRUINDO</small></span></a>
+    <div class="side-label">TRILHA DE APRENDIZADO</div><nav id="lesson-nav"></nav>
+    <div class="sidebar-bottom"><span class="pulse"></span> API local <span id="api-status">verificando</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><span>Trilha prática <span class="muted">/</span> RabbitMQ com .NET</span><button class="ghost" id="reset-progress">Reiniciar trilha</button></header>
+    <section id="inicio" class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> GUIA INTERATIVO · .NET WEB API</div><h1>Mensagens que<br>chegam <em>no tempo certo.</em></h1><p>Aprenda RabbitMQ evoluindo uma API mínima. Uma ideia por etapa, código comentado, exercícios e um fluxo para testar com as próprias mãos.</p><button class="primary" id="start-learning">Começar a estudar <span>→</span></button></div>
+      <div class="flow-card"><div class="flow-title">O caminho da mensagem <span>VISÃO GERAL</span></div><div class="flow"><div class="flow-node"><b>01</b><strong>API .NET</strong><small>publica</small></div><div class="flow-arrow">···<i>›</i></div><div class="flow-node broker"><b>02</b><strong>RabbitMQ</strong><small>roteia</small></div><div class="flow-arrow">···<i>›</i></div><div class="flow-node"><b>03</b><strong>Consumer</strong><small>processa</small></div></div><div class="flow-caption"><span>HTTP</span><span>mensagem</span><span>resultado</span></div></div>
+    </section>
+    <section class="stats"><div><strong id="progress-count">0/7</strong><span>ETAPAS CONCLUÍDAS</span></div><div class="progress-track"><i id="progress-bar"></i></div><div><strong id="streak">0</strong><span>CONCEITOS PARA REVISAR</span></div></section>
+    <div class="workspace"><section class="lesson-column"><div class="section-heading"><div><div class="eyebrow">MÃO NA MASSA</div><h2>Sua trilha</h2></div><span class="muted" id="lesson-counter">Etapa 1 de 7</span></div><div id="lesson-content"></div></section>
+    <aside class="right-rail"><section class="rail-card checklist"><div class="rail-heading"><span class="icon-box">✓</span><div><h3>O que já estudei</h3><small>Seu progresso fica neste navegador</small></div></div><div id="checklist-items"></div></section>
+    <section class="rail-card notes"><div class="rail-heading"><span class="icon-box note-icon">✎</span><div><h3>Meu caderno</h3><small>Anote dúvidas e pontos difíceis</small></div></div><textarea id="notes" placeholder="Ex.: ainda confundo exchange com queue..."></textarea><div class="note-footer"><span id="save-status">Salvo automaticamente</span><button class="text-button" id="review-notes">Revisar pontos difíceis ↗</button></div></section>
+    <section class="rail-card concept-card"><div class="eyebrow">LEMBRETE RÁPIDO</div><div class="concept-line"><span>exchange</span><i>→</i><span>fila</span><i>→</i><span>consumer</span></div><p>O produtor publica para uma exchange. A exchange encaminha para filas. O consumer recebe da fila.</p></section></aside></div>
+    <footer>Feito para experimentar, errar e entender. <span>Sem banco de dados · .NET + RabbitMQ</span></footer>
+  </main><script src="/app.js"></script>
+</body>
+</html>

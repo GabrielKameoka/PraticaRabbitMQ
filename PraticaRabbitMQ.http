@@ -1,0 +1,27 @@
+@PraticaRabbitMQ_HostAddress = http://localhost:5267
+
+### Cria um usuário
+POST {{PraticaRabbitMQ_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "name": "Ana Silva",
+  "email": "ana@example.com"
+}
+
+### Lista os usuários
+GET {{PraticaRabbitMQ_HostAddress}}/api/users
+Accept: application/json
+
+### Cria um produto
+POST {{PraticaRabbitMQ_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Teclado",
+  "price": 199.90
+}
+
+### Lista os produtos
+GET {{PraticaRabbitMQ_HostAddress}}/api/products
+Accept: application/json
